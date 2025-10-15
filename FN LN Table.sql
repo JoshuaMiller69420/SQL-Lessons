@@ -1,5 +1,8 @@
+-- dropping a table
+drop table if exists employees;
+
 -- creating a table
-create table employees(
+create table if not exists employees(
 	employee_id INT,
     first_name varchar(50), -- varchar is like a string that can 
     last_name varchar(50),
